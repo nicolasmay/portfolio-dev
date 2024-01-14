@@ -1,0 +1,32 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+    {
+        date: "Septiembre 2022",
+        title: "Encargado tecnico",
+        description: "una bestia parda. jejeje",
+        link: "",
+    },
+    {
+        date: "Fecha",
+        title: "Puesto",
+        description:
+            "Vamos a probar escribir asi. nose que hacer la verdad que tengais buena suerte solo pruebo.\
+            Esto es un punto a parte a ver como queda, nose que mas hacer la verdad un saludo afectuoso afectuoso \
+             afectuoso afectuoso afectuoso afectuoso afectuoso parece que si\
+              funciona pero no me formatea bien en vscode TODO: buscar como autoformatear para abajo en JS",
+        link: "#",
+    },
+];
+---
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+        EXPERIENCE.map((experience) => (
+            <li>
+                <ExperienceItem {...experience} />
+            </li>
+        ))
+    }
+</ol>
