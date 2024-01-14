@@ -1,0 +1,45 @@
+---
+const PROJECTS = [
+    {
+        title: "Mi primer proyecto",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, ducimus. Vel perspiciatis sapiente laboriosam explicabo fugit officia laudantium nihil praesentium, aliquid, recusandae molestiae exercitationem non assumenda numquam quo! Minima, nulla!",
+        link: "",
+        image: "",
+        tags: ["Java", "NodeJS", "JavaScript"],
+    },
+];
+---
+
+{
+    PROJECTS.map((este_parametro_se_usa_para_recorrer_el_objeto_PROJECTS) => (
+        <article>
+            <h3>
+                {este_parametro_se_usa_para_recorrer_el_objeto_PROJECTS.title}
+            </h3>
+            <p>
+                {
+                    este_parametro_se_usa_para_recorrer_el_objeto_PROJECTS.description
+                }
+            </p>
+            <a
+                href={
+                    este_parametro_se_usa_para_recorrer_el_objeto_PROJECTS.link
+                }
+            />
+            <ul>
+                {este_parametro_se_usa_para_recorrer_el_objeto_PROJECTS.tags.map(
+                    (tag) => (
+                        <li>{tag}</li>
+                    ),
+                )}
+            </ul>
+
+            <img
+                src={
+                    este_parametro_se_usa_para_recorrer_el_objeto_PROJECTS.image
+                }
+            />
+        </article>
+    ))
+}
