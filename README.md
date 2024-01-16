@@ -1,6 +1,6 @@
 # Web portfolio for Nicolás Mayorga
 
-##Made with Astro
+#Made with Astro
 
 Link:
 https://nicolasmayorga.netlify.app/
