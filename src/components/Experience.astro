@@ -2,29 +2,30 @@
 import ExperienceItem from "./ExperienceItem.astro";
 
 const EXPERIENCE = [
-    {
-        date: "Septiembre 2022",
-        title: "Encargado tecnico",
-        description:
-            "Encargado de consultoria tecnologica, manejo de datos, excel y hosting web",
-        link: "https://empresasparadigma.cl/",
-    },
-    {
-        date: "Septiembre 2021",
-        title: "Global Game Jam - Participante",
-        description:
-            "Desarollo de un juego con tematica especifica en tiempo limite, trabajo en equipo",
-        link: "",
-    },
+  {
+    date: "Febrero 2024",
+    place: "CONEDUCA",
+    title: "Desarollador front end",
+    description: "",
+    link: "https://www.coneduca.cl",
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Encargado tecnico",
+    place: "Empresas Paradigma",
+    description:
+      "Encargado de consultoria tecnologica, manejo de datos, excel y hosting web",
+    link: "https://empresasparadigma.cl/",
+  },
 ];
 ---
 
 <ol class="relative border-s border-gray-200 dark:border-gray-700">
-    {
-        EXPERIENCE.map((experience) => (
-            <li>
-                <ExperienceItem {...experience} />
-            </li>
-        ))
-    }
+  {
+    EXPERIENCE.map((experience) => (
+      <li>
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
 </ol>
